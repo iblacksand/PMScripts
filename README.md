@@ -6,6 +6,14 @@ Scripts may only work in certain circumstance
 
 **This is for educational purposes only. Don't run these scripts unless you are testing.**
 
+## Status
+
+- (PadlockButtonClick.js)[../blob/master/PadlockButtonClick.js] - Working in Firefox and Chrome
+
+- (PadlockAutoFormSubmit.js)[../blob/master/PadlockAutoFormSubmit.js] - Revokes all devices instantly
+
+- (PadlockAutoFormSubmit.js)[../blob/master/PadlockAutoFormSubmit.js] - Works fine
+
 ## Installion
 
 ### Chrome
