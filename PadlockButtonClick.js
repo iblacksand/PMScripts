@@ -16,7 +16,6 @@
 (function () {
     'use strict';
 
-    setTimeout(location.reload(), 30000); // makes sure buttons are loaded
 
     //if title is padlock
     if (document.title.toLowerCase().indexOf("padlock") === -1) return;
