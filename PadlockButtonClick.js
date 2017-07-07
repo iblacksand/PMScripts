@@ -39,11 +39,13 @@
     if (name == "paired") return;
     // fi pairing
 
+
     var els = document.querySelectorAll("a[href='.?action=resetdata']");//gets the link to reset data
     for (var i = 0, _len = els.length; i < _len; i++) {
         var el = els[i];
         el.click(); // clicks the link to reset
     }
+
     setTimeout(function () {
         var buttons = document.getElementsByTagName('button'); //gets all buttons on page
         console.log("starting clicking");
