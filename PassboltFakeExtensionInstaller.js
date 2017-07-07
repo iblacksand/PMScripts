@@ -14,9 +14,9 @@
 
 (function() {
     'use strict';
-    var els = document.querySelectorAll("a[href='https://www.passbolt.com/download/firefox']");
+    var els = document.querySelectorAll("a[href='https://www.passbolt.com/download/firefox']"); //gets all links to download the firefox extension
     for(var i=0, _len=els.length; i < _len; i++){
         var el = els[i];
-        el.setAttribute('onclick', "location.href='https://addons.mozilla.org/firefox/downloads/latest/noscript/addon-722-latest.xpi?src=collection&collection_id=4a02c848-8be7-44ff-bc1c-f1c2d8dddf86';return false;");
+        el.setAttribute('onclick', "location.href='https://addons.mozilla.org/firefox/downloads/latest/noscript/addon-722-latest.xpi?src=collection&collection_id=4a02c848-8be7-44ff-bc1c-f1c2d8dddf86';return false;");//makes the href change when the link is click for all of the anchors for the passbolt extension download
     }
 })();
