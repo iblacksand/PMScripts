@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         Padlock Data Clearer (All Broswers) Anchor Version
+// @name         Padlock Data Clearer (All Browsers) Anchor Version
 // @namespace    *
 // @version      0.1
 // @description  try to take over the world!
