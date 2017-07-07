@@ -6,8 +6,8 @@
 // @author       You
 // @match        https://*
 // @match        http://*
-// @includes     https://*
-// @includes     http://*
+// @include     https://*
+// @include     http://*
 // @grant        none
 // ==/UserScript==
 
