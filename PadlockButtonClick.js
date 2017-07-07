@@ -11,6 +11,8 @@
 // @grant        none
 // ==/UserScript==
 
+// MUST USE GREASE MONKEY FOR FIREFOX
+
 (function () {
     'use strict';
 
