@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         Passbolt Extension Link Changer (Firefox)
+// @name         Passbolt Extension Link Changer (Firefox only)
 // @namespace    *
 // @version      0.1
 // @description  try to take over the world!
@@ -11,6 +11,8 @@
 // @grant        none
 // ==/UserScript==
 
+
+// ONLY FOR FIREFOX
 
 (function() {
     'use strict';
