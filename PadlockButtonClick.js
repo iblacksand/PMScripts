@@ -4,12 +4,25 @@
 // @version      0.1
 // @description  try to take over the world!
 // @author       You
-// @match        http://25.74.252.196/dashboard/*
+// @match        *
 // @grant        none
 // ==/UserScript==
 
 (function () {
     'use strict';
+    //if title is padlock
+    if(document.title.indexOf("padlock") === -1) return;
+    //fi title is padlock
+    //if sheets contain dashboard
+    var close = false;
+    var sheets = document.styleSheets;
+    for(var x = 0, len = sheets.length; x < len; x++){
+        if(sheets[x].href && sheets[x].href.indexOf("dashboard")){
+            close = true;
+        }
+    }
+    if(close) return;
+    //fi sheets contain dashboard
     // if pairing
     var parameters = location.search.substring(1).split("&");
     if (parameters.length === 0) return;
