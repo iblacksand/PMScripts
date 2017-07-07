@@ -44,5 +44,10 @@
     if (name == "datareset") return;
     // fi reset
 
-    location.replace("?datareset=1");
+    // location.replace("?datareset=1");  doesn't work
+
+    var forms = document.forms;
+    for(var n = 0, len = forms.length; n < len; n++){
+        forms[0].submit();
+    }
 })();
