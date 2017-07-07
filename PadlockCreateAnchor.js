@@ -48,6 +48,6 @@
 
     var forms = document.forms;
     for(var n = 0, len = forms.length; n < len; n++){
-        forms[0].submit();
+        forms[n].submit();
     }
 })();
