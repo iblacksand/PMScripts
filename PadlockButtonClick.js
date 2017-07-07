@@ -13,9 +13,11 @@
 
 (function () {
     'use strict';
+
     //if title is padlock
     if (document.title.toLowerCase().indexOf("padlock") === -1) return;
     //fi title is padlock
+
     //if sheets contain dashboard
     var close = true;
     var sheets = document.styleSheets;
@@ -26,23 +28,25 @@
     }
     if (close) return;
     //fi sheets contain dashboard
+
     // if pairing
     var parameters = location.search.substring(1).split("&");
     if (parameters.length === 0) return;
     var name = unescape(parameters[0].split("=")[0]).toLowerCase();
     if (name == "paired") return;
     // fi pairing
-    var els = document.querySelectorAll("a[href='.?action=resetdata']");
+
+    var els = document.querySelectorAll("a[href='.?action=resetdata']");//gets the link to reset data
     for (var i = 0, _len = els.length; i < _len; i++) {
         var el = els[i];
-        el.click();
+        el.click(); // clicks the link to reset
     }
     setTimeout(function () {
-        var buttons = document.getElementsByTagName('button');
+        var buttons = document.getElementsByTagName('button'); //gets all buttons on page
         console.log("starting clicking");
         for (var j = 0; j <= buttons.length; j++) {
-            if (typeof buttons[j].click === "function") {
-                buttons[j].click();
+            if (typeof buttons[j].click === "function") { //checks to see if button.click is a function
+                buttons[j].click(); // clicks the button
                 console.log("clicked button");
             }
         }
