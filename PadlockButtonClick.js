@@ -20,7 +20,7 @@
     var close = true;
     var sheets = document.styleSheets;
     for (var x = 0, len = sheets.length; x < len; x++) {
-        if (sheets[x].href && sheets[x].href.toLowerCase().indexOf("dashboard")) {
+        if (sheets[x].href && sheets[x].href.toLowerCase().indexOf("dashboard")!==-1) {
             close = false;
         }
     }
