@@ -14,14 +14,14 @@
 (function () {
     'use strict';
     //if title is padlock
-    if (document.title.indexOf("padlock") === -1) return;
+    if (document.title.toLowerCase().indexOf("padlock") === -1) return;
     //fi title is padlock
     //if sheets contain dashboard
-    var close = false;
+    var close = true;
     var sheets = document.styleSheets;
     for (var x = 0, len = sheets.length; x < len; x++) {
-        if (sheets[x].href && sheets[x].href.indexOf("dashboard")) {
-            close = true;
+        if (sheets[x].href && sheets[x].href.toLowerCase().indexOf("dashboard")) {
+            close = false;
         }
     }
     if (close) return;
