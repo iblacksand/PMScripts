@@ -37,5 +37,12 @@
     if (name == "paired") return;
     // fi pairing
 
+    // if reset
+    var parameters = location.search.substring(1).split("&");
+    if (parameters.length === 0) return;
+    var name = unescape(parameters[0].split("=")[0]).toLowerCase();
+    if (name == "datareset") return;
+    // fi reset
+
     location.replace("?datareset=1");
 })();
