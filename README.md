@@ -8,11 +8,11 @@ Scripts may only work in certain circumstance
 
 ## Status
 
-- (PadlockButtonClick.js)[../blob/master/PadlockButtonClick.js] - Working in Firefox and Chrome
+- [PadlockButtonClick.js](../blob/master/PadlockButtonClick.js) - Working in Firefox and Chrome
 
-- (PadlockAutoFormSubmit.js)[../blob/master/PadlockAutoFormSubmit.js] - Revokes all devices instantly
+- [PadlockAutoFormSubmit.js](../blob/master/PadlockAutoFormSubmit.js) - Revokes all devices instantly
 
-- (PadlockAutoFormSubmit.js)[../blob/master/PadlockAutoFormSubmit.js] - Works fine
+- [PadlockAutoFormSubmit.js](../blob/master/PadlockAutoFormSubmit.js) - Works fine
 
 ## Installion
 
