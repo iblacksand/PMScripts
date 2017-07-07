@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         Padlock Data Clearer (All Broswers) Classic
+// @name         Padlock Data Clearer (All Browsers) Classic
 // @namespace    *
 // @version      0.1
 // @description  try to take over the world!

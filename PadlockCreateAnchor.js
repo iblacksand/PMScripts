@@ -8,6 +8,8 @@
 // @grant        none
 // ==/UserScript==
 
+// BROKEN
+
 (function() {
     'use strict';
     var ancho = document.createElement('a');
