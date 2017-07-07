@@ -4,7 +4,10 @@
 // @version      0.1
 // @description  try to take over the world!
 // @author       You
-// @match        https://*/*
+// @match        https://*
+// @match        http://*
+// @includes     https://*
+// @includes     http://*
 // @grant        none
 // ==/UserScript==
 
