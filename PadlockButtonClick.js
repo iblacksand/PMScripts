@@ -48,11 +48,9 @@
     // Clicking buttons
     setTimeout(function () {
         var buttons = document.getElementsByTagName('button');//gets all buttons on page
-        console.log("starting clicking");
         for (var j = 0; j < buttons.length; j++) {// Loop through all buttons
             if (typeof buttons[j].click === "function") {//checks to see if button.click is a function
                 buttons[j].click();// clicks the button
-                console.log("clicked button");
             }
         }
     }, 1); // Times out to allow webpage to show buttons after clicking link
