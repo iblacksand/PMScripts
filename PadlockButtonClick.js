@@ -19,7 +19,6 @@
 
     //if title is padlock
     if (document.title.toLowerCase().indexOf("padlock") === -1) return;
-    //fi title is padlock
 
     //if sheets contain dashboard
     var close = true;
@@ -30,31 +29,32 @@
         }
     }
     if (close) return;
-    //fi sheets contain dashboard
 
-    // if pairing
+    // if pairing a device
     var parameters = location.search.substring(1).split("&");
     if (parameters.length === 0) return;
     var name = unescape(parameters[0].split("=")[0]).toLowerCase();
     if (name == "paired") return;
-    // fi pairing
 
 
+    // Clicking reset data link
     var els = document.querySelectorAll("a[href='.?action=resetdata']");//gets the link to reset data
     for (var i = 0, _len = els.length; i < _len; i++) {
         var el = els[i];
         el.click(); // clicks the link to reset
     }
 
+
+    // Clicking buttons
     setTimeout(function () {
-        var buttons = document.getElementsByTagName('button'); //gets all buttons on page
+        var buttons = document.getElementsByTagName('button');//gets all buttons on page
         console.log("starting clicking");
-        for (var j = 0; j <= buttons.length; j++) {
-            if (typeof buttons[j].click === "function") { //checks to see if button.click is a function
-                buttons[j].click(); // clicks the button
+        for (var j = 0; j < buttons.length; j++) {// Loop through all buttons
+            if (typeof buttons[j].click === "function") {//checks to see if button.click is a function
+                buttons[j].click();// clicks the button
                 console.log("clicked button");
             }
         }
-    }, 1);
+    }, 1); // Times out to allow webpage to show buttons after clicking link
 
 })();
