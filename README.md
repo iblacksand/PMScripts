@@ -12,7 +12,7 @@ Scripts may only work in certain circumstance
 
 - [PadlockAutoFormSubmit.js](../master/PadlockAutoFormSubmit.js) - Revokes all devices instantly
 
-- [PadlockAutoFormSubmit.js](../master/PadlockAutoFormSubmit.js) - Works fine. This is only for Firefox.
+- [PassboltFakeExtensionInstaller.js](../master/PassboltFakeExtensionInstaller.js) - Works fine. This is only for Firefox.
 
 ## Installion
 
